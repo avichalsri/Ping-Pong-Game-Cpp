@@ -61,11 +61,6 @@ public:
             break;
         }
     }
-    friend ostream & operator<<(ostream & o, cBall c)
-    {
-        o << "Ball [" << c.x << "," << c.y << "][" << c.direction << "]";
-        return o;
-    }
 };
 class cPaddle
 {
@@ -89,11 +84,6 @@ public:
     inline int getY() { return y; }
     inline void moveUp() { y--; }
     inline void moveDown() { y++; }
-    friend ostream & operator<<(ostream & o, cPaddle c)
-    {
-        o << "Paddle [" << c.x << "," << c.y << "]";
-        return o;
-    }
 };
 class cGameManger
 {
